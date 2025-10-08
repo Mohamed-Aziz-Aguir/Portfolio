@@ -50,11 +50,11 @@ export default function Home() {
                   <div className="mt-4 flex gap-3">
                     <a href="https://www.linkedin.com/in/mohamedazizaguir" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 hover:bg-indigo-500 text-white text-sm">LinkedIn</a>
                     <a href="mailto:mohamedaziz.aguir@outlook.com" className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-slate-600 text-slate-200 text-sm">Email</a>
-                    <Link href="/projects"  className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-emerald-600 hover:bg-emerald-500 text-white text-sm">View Projects</Link><Link href='/awards' className='inline-flex items-center px-3 py-1.5 rounded-md border border-slate-600 ml-2 hover:bg-slate-700/40 text-slate-200 text-sm'>Awards (1)</Link>
+                    <Link href="/#contact" className="inline-flex items-center px-3 py-1.5 rounded-md bg-emerald-600 hover:bg-emerald-500 text-white text-sm ml-2 transition-transform transform hover:scale-105">Contact Me</Link><Link href="/projects"  className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-emerald-600 hover:bg-emerald-500 text-white text-sm">View Projects</Link>
                   </div>
                 </div>
               </div>
-              <div className="mt-6 grid grid-cols-3 gap-4">
+              <div className="mt-6 grid grid-cols-2 gap-4">
                 <div className="p-3 rounded-xl bg-[#071429]/20 text-center transform transition hover:-translate-y-1 hover:scale-105">
                   <div className="text-2xl font-bold text-indigo-300">12</div>
                   <div className="text-sm text-slate-400">Projects</div>
