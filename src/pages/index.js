@@ -81,23 +81,34 @@ export default function Home() {
               </article>
             </div>
 
-            <section id="projects" className="mt-6">
-              <h2 className="text-2xl font-bold mb-4">Selected Projects</h2>
-              <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/projects/full-soc-deployment"><a className="project-card p-6 rounded-2xl bg-[#071429]/30 border border-slate-700/30 block hover:scale-105 transform transition"> 
-                  <h3 className="font-semibold">SOC Architecture Deployment — ESPRIT</h3>
-                  <p className="text-sm text-slate-300 mt-2">Built a full SOC with Wazuh, TheHive, Shuffle, Cortex and Velociraptor. Network zoning with pfSense, automated incident pipelines and ticket enrichment.</p>
-                  <div className="mt-4 flex gap-3"><span className="btn-outline">Details</span><a className="btn-outline" href="https://github.com/Mohamed-Aziz-Aguir" target="_blank" rel="noopener noreferrer">Source</a></div>
-                </a></Link>
+            
+<section id="projects" className="mt-6">
+  <h2 className="text-2xl font-bold mb-4">Selected Projects</h2>
+  <div className="grid md:grid-cols-2 gap-4">
+    <Link href="/projects/full-soc-deployment" className="p-4 rounded-2xl border border-slate-700/70 bg-slate-900/30 block hover:scale-105 transform transition">
+      <h3 className="font-semibold">SOC Architecture Deployment — ESPRIT</h3>
+      <p className="text-sm text-slate-300 mt-2">
+        Built a full SOC with Wazuh, TheHive, Shuffle, Cortex and Velociraptor. Network zoning with pfSense, automated incident pipelines and ticket enrichment.
+      </p>
+      <div className="mt-4 flex gap-3">
+        <span className="text-xs px-2 py-0.5 rounded bg-slate-800/60 border border-slate-700">Blue Team</span>
+        <span className="text-xs px-2 py-0.5 rounded bg-slate-800/60 border border-slate-700">SOC</span>
+      </div>
+    </Link>
 
-                <Link href="/projects/cti-platform"><a className="project-card p-6 rounded-2xl bg-[#071429]/30 border border-slate-700/30 block hover:scale-105 transform transition"> 
-                  <h3 className="font-semibold">Cyber Threat Intelligence Platform — Capgemini</h3>
-                  <p className="text-sm text-slate-300 mt-2">Production-ready backend for collecting, classifying and visualizing threat intelligence. Features AI classification, smart similarity search, interactive map and scheduled scans.</p>
-                  <div className="mt-4 flex gap-3"><span className="btn-outline">Details</span><a className="btn-outline" href="https://github.com/Mohamed-Aziz-Aguir" target="_blank" rel="noopener noreferrer">Source</a></div>
-                </a></Link>
-              </div>
-            </div></div>
+    <Link href="/projects/cti-platform" className="p-4 rounded-2xl border border-slate-700/70 bg-slate-900/30 block hover:scale-105 transform transition">
+      <h3 className="font-semibold">Cyber Threat Intelligence Platform — Capgemini</h3>
+      <p className="text-sm text-slate-300 mt-2">
+        Production-ready backend for collecting, classifying and visualizing threat intelligence. Features AI classification, smart similarity search, interactive map and scheduled scans.
+      </p>
+      <div className="mt-4 flex gap-3">
+        <span className="text-xs px-2 py-0.5 rounded bg-slate-800/60 border border-slate-700">CTI</span>
+        <span className="text-xs px-2 py-0.5 rounded bg-slate-800/60 border border-slate-700">Backend</span>
+      </div>
+    </Link>
+  </div>
 </section>
+
           </div>
 
           <aside className="space-y-6">
