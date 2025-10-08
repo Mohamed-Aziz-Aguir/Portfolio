@@ -29,12 +29,8 @@ export default function Home() {
       <meta name="twitter:title" content="Mohamed Aziz Aguir — Cybersecurity Engineer" />
       <meta name="twitter:description" content="SOC engineering, CTI, detection engineering, and security automation." />
       <meta name="twitter:image" content="/og-image.png" />
-      <!-- Analytics options: Vercel Analytics (no code required, enable in Vercel dashboard) -->
-      <!-- Or Plausible: paste your script below and replace 'your-domain.com' -->
-      <!-- <script defer data-domain="your-domain.com" src="https://plausible.io/js/plausible.js"></script> -->
 
-        <title>Mohamed Aziz Aguir — Cybersecurity Engineer</title>
-        <meta name="description" content="SOC / SIEM Specialist, Cyber Threat Intelligence, FastAPI, Docker, Elasticsearch" />
+
       </Head>
 
       <header className="backdrop-blur sticky top-0 z-50 bg-black/30 border-b border-slate-700/20">
