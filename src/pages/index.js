@@ -21,8 +21,8 @@ export default function Home() {
     <div className="min-h-screen bg-slate-900 dark:bg-slate-900 text-slate-100">
       <Head>
       <title>Mohamed Aziz Aguir — Cybersecurity Engineer (Blue & Red Teaming)</title>
-      <meta name="description" content="Mohamed Aziz Aguir — Cybersecurity Engineer focusing on SOC engineering, CTI, security automation, and both blue & red teaming. Based in Monastir, Tunisia.">
-      <meta property="og:title" content="Mohamed Aziz Aguir — Cybersecurity Engineer" />
+      <meta name="description" content="Mohamed Aziz Aguir — Cybersecurity Engineer focusing on SOC engineering, CTI, security automation, and both blue & red teaming. Based in Monastir, Tunisia." />
+<meta property="og:title" content="Mohamed Aziz Aguir — Cybersecurity Engineer" />
       <meta property="og:description" content="SOC engineering, CTI, detection engineering, and security automation. View projects, resume, and contact." />
       <meta property="og:image" content="/og-image.png" />
       <meta name="twitter:card" content="summary_large_image" />
@@ -47,7 +47,7 @@ export default function Home() {
             <a href="#work" className="hover:text-white">Work</a>
             <a href="#projects" className="hover:text-white">Projects</a>
             <a href="#contact" className="hover:text-white">Contact</a>
-            <a className="btn-outline" href="/cv/Mohamed_Az_Aguir_CV_English.pdf" download>Download CV</a>
+            <a className="btn-outline" href="/Mohamed_Az_Aguir_CV_English.pdf" download>Download CV</a>
             <button onClick={toggle} className="ml-4 px-3 py-1 rounded-md bg-slate-800/50">{theme==='dark'?'Dark':'Light'}</button>
           </nav>
         </div>
