@@ -60,7 +60,7 @@ export default function Home() {
             <div className="p-8 rounded-3xl bg-slate-800/30 border border-slate-700/40 shadow-lg transform transition-transform hover:-translate-y-2 hover:scale-102">
               <div className="flex items-start gap-6">
                 <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-indigo-500/30">
-                  <Image src="/img/profile.png" alt="profile" className="w-full h-full object-cover"/ width={160} height={160} priority />
+                  <Image src="/img/profile.png" alt="Profile photo" className="w-full h-full object-cover" width={160} height={160} priority />
                 </div>
                 <div>
                   <h1 className="text-4xl font-extrabold">Hi, I&apos;m <span className="text-indigo-300">Mohamed Aziz Aguir</span></h1>
@@ -68,7 +68,7 @@ export default function Home() {
                   <div className="mt-4 flex gap-3">
                     <a href="https://www.linkedin.com/in/mohamedazizaguir" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 hover:bg-indigo-500 text-white text-sm">LinkedIn</a>
                     <a href="mailto:mohamedaziz.aguir@outlook.com" className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-slate-600 text-slate-200 text-sm">Email</a>
-                    <Link href="/projects"><a className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-emerald-600 hover:bg-emerald-500 text-white text-sm">View Projects</a></Link>
+                    <Link href="/projects"  className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-emerald-600 hover:bg-emerald-500 text-white text-sm">View Projects</Link>
                   </div>
                 </div>
               </div>
