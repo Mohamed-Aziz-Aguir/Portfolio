@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <div id="top">
+    <div id="top" className="pb-24">
       <Navbar />
       <Component {...pageProps} />
       <Footer />

@@ -34,18 +34,7 @@ export default function Home() {
 
       </Head>
 
-      <header className="backdrop-blur sticky top-0 z-50 bg-black/30 border-b border-slate-700/20">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center font-bold">MA</div>
-            <div className="hidden sm:block">
-              <div className="text-sm font-semibold">Mohamed Aziz Aguir</div>
-              <div className="text-xs text-slate-400">Cybersecurity Engineer</div>
-            </div>
-          </div>
-          
-        </div>
-      </header>
+      
 
       <main id="about" className="max-w-6xl mx-auto px-6 py-12">
         <section className="grid lg:grid-cols-3 gap-8 items-start">
