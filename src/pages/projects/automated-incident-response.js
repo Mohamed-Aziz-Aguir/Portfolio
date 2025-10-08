@@ -4,8 +4,8 @@ export default function AutomatedIR(){
   return (
     <div className='min-h-screen bg-black text-white'>
       <div className='max-w-5xl mx-auto px-6 py-12'>
-        <Link href='/projects'><a className='text-indigo-300 hover:underline'>&larr; Back</a></Link>
-        <h1 className='mt-4 text-2xl font-semibold'>Automated Incident Response — Apprenticeship</h1>
+        <Link href="\1"  className='text-indigo-300 hover:underline'>\3</Link>
+        <div className='flex items-center justify-between'><h1 className='mt-4 text-2xl font-semibold'>Automated Incident Response — Apprenticeship</h1><div className='flex gap-3 text-sm text-slate-400'><Link href='/' className='hover:text-white'>Home</Link><span>•</span><Link href='/projects' className='hover:text-white'>Projects</Link></div></div>
         <p className='mt-3 text-slate-300/90'>Jan 2025 — Mar 2025 · 3 months</p>
 
         <div className='mt-6 space-y-3 text-slate-200'>

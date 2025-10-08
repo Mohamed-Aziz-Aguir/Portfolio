@@ -54,7 +54,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-6 py-12">
+      <main id="about" className="max-w-6xl mx-auto px-6 py-12">
         <section className="grid lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2 space-y-6">
             <div className="p-8 rounded-3xl bg-slate-800/30 border border-slate-700/40 shadow-lg transform transition-transform hover:-translate-y-2 hover:scale-102">
