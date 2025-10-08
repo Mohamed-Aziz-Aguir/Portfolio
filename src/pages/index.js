@@ -1,3 +1,4 @@
+import Image from 'next/image'
 
 import Head from 'next/head'
 import Link from 'next/link'
@@ -59,10 +60,10 @@ export default function Home() {
             <div className="p-8 rounded-3xl bg-slate-800/30 border border-slate-700/40 shadow-lg transform transition-transform hover:-translate-y-2 hover:scale-102">
               <div className="flex items-start gap-6">
                 <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-indigo-500/30">
-                  <img src="/img/profile.png" alt="profile" className="w-full h-full object-cover"/>
+                  <Image src="/img/profile.png" alt="profile" className="w-full h-full object-cover"/ width={160} height={160} priority />
                 </div>
                 <div>
-                  <h1 className="text-4xl font-extrabold">Hi, I'm <span className="text-indigo-300">Mohamed Aziz Aguir</span></h1>
+                  <h1 className="text-4xl font-extrabold">Hi, I&apos;m <span className="text-indigo-300">Mohamed Aziz Aguir</span></h1>
                   <p className="mt-2 text-slate-300 max-w-2xl">Final-Year Engineering Student at ESPRIT | SOC / SIEM Specialist | Cyber Threat Intelligence | Backend Development | FastAPI • Docker • Elasticsearch. Winner — Bal des Projets 2025.</p>
                   <div className="mt-4 flex gap-3">
                     <a href="https://www.linkedin.com/in/mohamedazizaguir" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 hover:bg-indigo-500 text-white text-sm">LinkedIn</a>
@@ -89,11 +90,11 @@ export default function Home() {
 
             <div id="work" className="grid md:grid-cols-2 gap-4">
               <article className="p-6 rounded-2xl bg-[#071429]/40 border border-slate-700/30 transform transition hover:-translate-y-2 hover:scale-105">
-                <h3 className="font-semibold text-lg"><a href="/projects/cti-platform">Capgemini — Cyber Threat Intelligence Platform (Jun 2025 – Sep 2025)</a></h3>
+                <h3 className="font-semibold text-lg"><Link href="/projects/cti-platform"><a>Capgemini — Cyber Threat Intelligence Platform (Jun 2025 – Sep 2025)</a></Link></h3>
                 <p className="mt-2 text-slate-300 text-sm">Designed and developed a production CTI platform focused on automotive and general cybersecurity. Built a modular FastAPI backend integrated with Elasticsearch (v8.13.4), Redis and Docker, implemented AI-powered classification and similarity search for automated CVE correlation, and deployed the system on Ubuntu 24.04 following Agile practices.</p>
               </article>
               <article className="p-6 rounded-2xl bg-[#071429]/40 border border-slate-700/30 transform transition hover:-translate-y-2 hover:scale-105">
-                <h3 className="font-semibold text-lg"><a href="/projects/full-soc-deployment">ESPRIT — SOC Architecture & Automation (Nov 2024 – Jun 2025)</a></h3>
+                <h3 className="font-semibold text-lg"><Link href="/projects/full-soc-deployment"><a>ESPRIT — SOC Architecture & Automation (Nov 2024 – Jun 2025)</a></Link></h3>
                 <p className="mt-2 text-slate-300 text-sm">Led the SOC Architecture project: deployed Wazuh, Velociraptor, TheHive, Shuffle, Cortex and Zabbix; configured pfSense zones (DMZ, Honeynet, LAN, SOC); built incident handling pipelines and automated alert enrichment and response workflows using Shuffle and Cortex analyzers.</p>
               </article>
             </div>
