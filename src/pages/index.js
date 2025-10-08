@@ -43,14 +43,7 @@ export default function Home() {
               <div className="text-xs text-slate-400">Cybersecurity Engineer</div>
             </div>
           </div>
-          <nav className="hidden md:flex items-center gap-6 text-sm text-slate-300">
-            <a href="#about" className="hover:text-white">About</a>
-            <a href="#work" className="hover:text-white">Work</a>
-            <a href="#projects" className="hover:text-white">Projects</a>
-            <a href="#contact" className="hover:text-white">Contact</a>
-            <a className="btn-outline" href="/Mohamed_Az_Aguir_CV_English.pdf" download>Download CV</a>
-            <button onClick={toggle} className="ml-4 px-3 py-1 rounded-md bg-slate-800/50">{theme==='dark'?'Dark':'Light'}</button>
-          </nav>
+          
         </div>
       </header>
 
@@ -68,7 +61,7 @@ export default function Home() {
                   <div className="mt-4 flex gap-3">
                     <a href="https://www.linkedin.com/in/mohamedazizaguir" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 hover:bg-indigo-500 text-white text-sm">LinkedIn</a>
                     <a href="mailto:mohamedaziz.aguir@outlook.com" className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-slate-600 text-slate-200 text-sm">Email</a>
-                    <Link href="/projects"  className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-emerald-600 hover:bg-emerald-500 text-white text-sm">View Projects</Link>
+                    <Link href="/projects"  className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-emerald-600 hover:bg-emerald-500 text-white text-sm">View Projects</Link><Link href='/awards' className='inline-flex items-center px-3 py-1.5 rounded-md border border-slate-600 ml-2 hover:bg-slate-700/40 text-slate-200 text-sm'>Awards (1)</Link>
                   </div>
                 </div>
               </div>
@@ -91,7 +84,7 @@ export default function Home() {
             <div id="work" className="grid md:grid-cols-2 gap-4">
               <article className="p-6 rounded-2xl bg-[#071429]/40 border border-slate-700/30 transform transition hover:-translate-y-2 hover:scale-105">
                 <h3 className="font-semibold text-lg"><Link href="/projects/cti-platform"><a>Capgemini — Cyber Threat Intelligence Platform (Jun 2025 – Sep 2025)</a></Link></h3>
-                <p className="mt-2 text-slate-300 text-sm">Designed and developed a production CTI platform focused on automotive and general cybersecurity. Built a modular FastAPI backend integrated with Elasticsearch (v8.13.4), Redis and Docker, implemented AI-powered classification and similarity search for automated CVE correlation, and deployed the system on Ubuntu 24.04 following Agile practices.</p>
+                <p className="mt-2 text-slate-300 text-sm">Designed and developed a production CTI platform focused on automotive and general cybersecurity. Built a modular FastAPI backend integrated with Elasticsearch (v8.13.4), Redis and Docker, implemented AI-powered classification and similarity search for automated 04 following Agile practices.</p>
               </article>
               <article className="p-6 rounded-2xl bg-[#071429]/40 border border-slate-700/30 transform transition hover:-translate-y-2 hover:scale-105">
                 <h3 className="font-semibold text-lg"><Link href="/projects/full-soc-deployment"><a>ESPRIT — SOC Architecture & Automation (Nov 2024 – Jun 2025)</a></Link></h3>

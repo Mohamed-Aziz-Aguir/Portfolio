@@ -13,6 +13,7 @@ export default function Navbar(){
           <Link href="/#about" className="hover:text-white">About</Link>
           <Link href="/projects" className="hover:text-white">Projects</Link>
           <Link href="/certifications" className="hover:text-white">Certifications</Link>
+          <Link href="/awards" className="hover:text-white">Awards</Link>
           <Link href="/#contact" className="hover:text-white">Contact</Link>
         </nav>
         <div className="flex items-center gap-3">
