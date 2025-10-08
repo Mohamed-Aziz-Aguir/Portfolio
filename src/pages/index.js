@@ -69,6 +69,40 @@ export default function Home() {
             </Link>
           </div>
         </section>
+        {/* Awards */}
+        <section id="awards" className="mt-12">
+          <h2 className="text-2xl font-bold mb-4">Awards</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/awards/bal-des-projets" className="p-4 rounded-2xl border border-slate-700/70 bg-slate-900/30 block hover:scale-105 transform transition">
+              <h3 className="font-semibold">Bal des Projets — Winner</h3>
+              <p className="text-sm text-slate-300 mt-2">
+                ESPRIT · SOC Architecture project (2nd year). Recognition for excellence and impact.
+              </p>
+              <div className="mt-4 flex gap-3">
+                <span className="text-xs px-2 py-0.5 rounded bg-slate-800/60 border border-slate-700">ESPRIT</span>
+                <span className="text-xs px-2 py-0.5 rounded bg-slate-800/60 border border-slate-700">2025</span>
+              </div>
+            </Link>
+          </div>
+        </section>
+
+        {/* Certifications & Badges */}
+        <section id="certifications" className="mt-12">
+          <h2 className="text-2xl font-bold mb-4">Certifications &amp; Badges</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/certifications/tryhackme" className="p-4 rounded-2xl border border-slate-700/70 bg-slate-900/30 block hover:scale-105 transform transition">
+              <h3 className="font-semibold">TryHackMe — Badges (In Progress)</h3>
+              <p className="text-sm text-slate-300 mt-2">
+                I&apos;m actively working on TryHackMe paths. As badges are earned, they&apos;ll appear here with verification links.
+              </p>
+              <div className="mt-4 flex gap-3">
+                <span className="text-xs px-2 py-0.5 rounded bg-slate-800/60 border border-slate-700">Blue Team</span>
+                <span className="text-xs px-2 py-0.5 rounded bg-slate-800/60 border border-slate-700">Learning</span>
+              </div>
+            </Link>
+          </div>
+        </section>
+
 
         {/* Contact (single section) */}
         <section id="contact" className="mt-12">
