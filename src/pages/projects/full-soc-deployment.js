@@ -1,1 +1,27 @@
-export default function SOC(){return (<div className='min-h-screen bg-[#071429] text-slate-100 p-10'><div className='max-w-4xl mx-auto'><a href='/'>← Back</a><h1 className='text-3xl font-bold mt-4'>Full SOC Deployment — ESPRIT (2024–2025)</h1><p className='mt-3 text-slate-300'>Open-source SOC deployment featuring zoning, alert pipelines, analyzers and automation using Wazuh, TheHive, Cortex, Shuffle and Velociraptor.</p></div></div>)}
+import Link from 'next/link'
+
+export default function SOC(){
+  return (
+    <div className='min-h-screen bg-black text-white'>
+      <div className='max-w-5xl mx-auto px-6 py-12'>
+        <Link href='/projects'><a className='text-indigo-300 hover:underline'>&larr; Back</a></Link>
+        <h1 className='mt-4 text-2xl font-semibold'>SOC Architecture Project — ESPRIT</h1>
+        <p className='mt-3 text-slate-300/90'>Academic · Nov 2024 — Present · On‑site</p>
+
+        <div className='mt-6 space-y-3 text-slate-200'>
+          <ul className='list-disc list-inside space-y-1'>
+            <li>Designed and deployed a complete open‑source SOC using <strong>Wazuh</strong>, <strong>Velociraptor</strong>, <strong>TheHive</strong>, <strong>Shuffle</strong>, <strong>Cortex</strong>, and <strong>Zabbix</strong>.</li>
+            <li>Configured <strong>pfSense</strong> firewalls and segmentation to define SOC zones (DMZ, Honeynet, LAN, SOC).</li>
+            <li>Built incident handling pipelines with automated alert escalation and enrichment.</li>
+            <li>Containerized services with <strong>Docker</strong> for isolation and easier deployment.</li>
+          </ul>
+        </div>
+
+        <div className='mt-6'>
+          <h2 className='text-lg font-semibold'>Focus Areas</h2>
+          <p className='mt-1 text-slate-300/90'>SOC Architecture, SIEM Integration, Network Segmentation, Incident Response</p>
+        </div>
+      </div>
+    </div>
+  )
+}

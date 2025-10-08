@@ -7,6 +7,7 @@ export default function Home() {
   const [theme, setTheme] = useState('dark')
   useEffect(()=>{
     const t = localStorage.getItem('theme') || 'dark'
+    localStorage.setItem('theme', t)
     setTheme(t)
     document.documentElement.classList.toggle('dark', t==='dark')
   },[])
@@ -19,6 +20,19 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-slate-900 dark:bg-slate-900 text-slate-100">
       <Head>
+      <title>Mohamed Aziz Aguir — Cybersecurity Engineer (Blue & Red Teaming)</title>
+      <meta name="description" content="Mohamed Aziz Aguir — Cybersecurity Engineer focusing on SOC engineering, CTI, security automation, and both blue & red teaming. Based in Monastir, Tunisia.">
+      <meta property="og:title" content="Mohamed Aziz Aguir — Cybersecurity Engineer" />
+      <meta property="og:description" content="SOC engineering, CTI, detection engineering, and security automation. View projects, resume, and contact." />
+      <meta property="og:image" content="/og-image.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Mohamed Aziz Aguir — Cybersecurity Engineer" />
+      <meta name="twitter:description" content="SOC engineering, CTI, detection engineering, and security automation." />
+      <meta name="twitter:image" content="/og-image.png" />
+      <!-- Analytics options: Vercel Analytics (no code required, enable in Vercel dashboard) -->
+      <!-- Or Plausible: paste your script below and replace 'your-domain.com' -->
+      <!-- <script defer data-domain="your-domain.com" src="https://plausible.io/js/plausible.js"></script> -->
+
         <title>Mohamed Aziz Aguir — Cybersecurity Engineer</title>
         <meta name="description" content="SOC / SIEM Specialist, Cyber Threat Intelligence, FastAPI, Docker, Elasticsearch" />
       </Head>
@@ -52,10 +66,10 @@ export default function Home() {
                   <img src="/img/profile.png" alt="profile" className="w-full h-full object-cover"/>
                 </div>
                 <div>
-                  <h1 className="text-4xl font-extrabold">Hi, I'm <span className="text-indigo-300">Mohamed</span></h1>
+                  <h1 className="text-4xl font-extrabold">Hi, I'm <span className="text-indigo-300">Mohamed Aziz Aguir</span></h1>
                   <p className="mt-2 text-slate-300 max-w-2xl">Final-Year Engineering Student at ESPRIT | SOC / SIEM Specialist | Cyber Threat Intelligence | Backend Development | FastAPI • Docker • Elasticsearch. Winner — Bal des Projets 2025.</p>
                   <div className="mt-4 flex gap-3">
-                    <a href="https://linkedin.com/in/mohamedazizaguir" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 hover:bg-indigo-500 text-white text-sm">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/mohamedazizaguir" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-indigo-600 hover:bg-indigo-500 text-white text-sm">LinkedIn</a>
                     <a href="mailto:mohamedaziz.aguir@outlook.com" className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-slate-600 text-slate-200 text-sm">Email</a>
                     <Link href="/projects"><a className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-emerald-600 hover:bg-emerald-500 text-white text-sm">View Projects</a></Link>
                   </div>
@@ -94,13 +108,13 @@ export default function Home() {
                 <Link href="/projects/full-soc-deployment"><a className="project-card p-6 rounded-2xl bg-[#071429]/30 border border-slate-700/30 block hover:scale-105 transform transition"> 
                   <h3 className="font-semibold">SOC Architecture Deployment — ESPRIT</h3>
                   <p className="text-sm text-slate-300 mt-2">Built a full SOC with Wazuh, TheHive, Shuffle, Cortex and Velociraptor. Network zoning with pfSense, automated incident pipelines and ticket enrichment.</p>
-                  <div className="mt-4 flex gap-3"><span className="btn-outline">Details</span><a className="btn-outline" href="https://github.com/Mohamed-Az-Aguir" target="_blank" rel="noopener noreferrer">Source</a></div>
+                  <div className="mt-4 flex gap-3"><span className="btn-outline">Details</span><a className="btn-outline" href="https://github.com/Mohamed-Aziz-Aguir" target="_blank" rel="noopener noreferrer">Source</a></div>
                 </a></Link>
 
                 <Link href="/projects/cti-platform"><a className="project-card p-6 rounded-2xl bg-[#071429]/30 border border-slate-700/30 block hover:scale-105 transform transition"> 
                   <h3 className="font-semibold">Cyber Threat Intelligence Platform — Capgemini</h3>
                   <p className="text-sm text-slate-300 mt-2">Production-ready backend for collecting, classifying and visualizing threat intelligence. Features AI classification, smart similarity search, interactive map and scheduled scans.</p>
-                  <div className="mt-4 flex gap-3"><span className="btn-outline">Details</span><a className="btn-outline" href="https://github.com/Mohamed-Az-Aguir" target="_blank" rel="noopener noreferrer">Source</a></div>
+                  <div className="mt-4 flex gap-3"><span className="btn-outline">Details</span><a className="btn-outline" href="https://github.com/Mohamed-Aziz-Aguir" target="_blank" rel="noopener noreferrer">Source</a></div>
                 </a></Link>
               </div>
             </section>
@@ -123,17 +137,23 @@ export default function Home() {
 
             <div id="contact" className="p-4 rounded-2xl bg-[#071429]/30 border border-slate-700/30 card transform transition hover:-translate-y-2 hover:scale-105">
               <h3 className="font-semibold">Contact</h3>
-              <p className="text-slate-300 text-sm">Preferred: <a id="linkPref" href="https://linkedin.com/in/mohamedazizaguir" target="_blank" rel="noopener noreferrer" className="text-indigo-300">LinkedIn</a></p>
+              <p className="text-slate-300 text-sm">Preferred: <a id="linkPref" href="https://www.linkedin.com/in/mohamedazizaguir" target="_blank" rel="noopener noreferrer" className="text-indigo-300">LinkedIn</a></p>
               <p className="text-slate-300 text-sm">Email: <a href="mailto:mohamedaziz.aguir@outlook.com" className="text-indigo-300">mohamedaziz.aguir@outlook.com</a></p>
             </div>
           </aside>
         </section>
-      </main>
+      
+    <section className="mt-8">
+      <h2 className="text-xl font-semibold text-white">Contact</h2>
+      <p className="text-slate-300/90">Monastir, Tunisia · +216 93 236 576 · mohamedaziz.aguir@outlook.com</p>
+    </section>
+    
+</main>
 
       <footer className="border-t border-slate-700/20 bg-transparent">
         <div className="max-w-6xl mx-auto px-6 py-6 text-sm text-slate-400 flex items-center justify-between">
           <div>© 2025 Mohamed Aziz Aguir</div>
-          <div>Built for Vercel • <a href="https://github.com/Mohamed-Az-Aguir" target="_blank" rel="noopener noreferrer" className="text-indigo-300">GitHub</a></div>
+          <div>Built for Vercel • <a href="https://github.com/Mohamed-Aziz-Aguir" target="_blank" rel="noopener noreferrer" className="text-indigo-300">GitHub</a></div>
         </div>
       </footer>
     </div>
