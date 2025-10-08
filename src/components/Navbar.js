@@ -1,9 +1,8 @@
 import Link from 'next/link'
-import ThemeToggle from './ThemeToggle'
 
-export default function Navbar(){
+export default function Navbar() {
   return (
-    <header className="backdrop-blur sticky top-0 z-50 bg-black/30 border-b border-slate-700/20">
+    <header className="sticky top-0 z-50 backdrop-blur bg-black/40 border-b border-slate-800/40">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <div className="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center font-bold">MA</div>
@@ -14,11 +13,8 @@ export default function Navbar(){
           <Link href="/projects" className="hover:text-white">Projects</Link>
           <Link href="/certifications" className="hover:text-white">Certifications</Link>
           <Link href="/awards" className="hover:text-white">Awards</Link>
-          <Link href="/#contact" className="hover:text-white transition-transform transform hover:scale-105">Contact</Link>
+          <Link href="/#contact" className="hover:text-white transition-transform hover:scale-105">Contact</Link>
         </nav>
-        <div className="flex items-center gap-3">
-          <ThemeToggle />
-        </div>
       </div>
     </header>
   )

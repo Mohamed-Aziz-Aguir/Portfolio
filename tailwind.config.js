@@ -3,11 +3,8 @@ module.exports = {
   content: [
     "./src/pages/**/*.{js,jsx,ts,tsx,mdx}",
     "./src/components/**/*.{js,jsx,ts,tsx,mdx}",
-    "./src/app/**/*.{js,jsx,ts,tsx,mdx}"
   ],
   darkMode: "class",
-  theme: {
-    extend: {},
-  },
+  theme: { extend: {} },
   plugins: [],
 };

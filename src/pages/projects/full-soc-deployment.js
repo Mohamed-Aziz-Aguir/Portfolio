@@ -3,12 +3,12 @@ import Head from 'next/head'
 
 export default function SOC(){
   return (
-    <div className='min-h-screen bg-black text-white'>
+    <div className='min-h-screen'>
       <Head>
         <title>SOC Architecture — ESPRIT | Projects</title>
         <meta name="description" content="Wazuh, Velociraptor, TheHive, Shuffle, Cortex, Zabbix; pfSense zones; automated incident pipelines and enrichment." />
       </Head>
-      <div className='max-w-5xl mx-auto px-6 py-12'>
+      <div className='max-w-6xl mx-auto px-6 py-12'>
         <div className='flex items-center justify-between'>
           <h1 className='text-2xl font-semibold'>SOC Architecture & Automation — ESPRIT</h1>
           <div className='space-x-3 text-sm text-slate-400'>
@@ -24,7 +24,7 @@ export default function SOC(){
           <ul className='list-disc list-inside space-y-1'>
             <li>Deployed <strong>Wazuh</strong>, <strong>Velociraptor</strong>, <strong>TheHive</strong>, <strong>Shuffle</strong>, <strong>Cortex</strong>, and <strong>Zabbix</strong>.</li>
             <li>Configured <strong>pfSense</strong> zones (DMZ, Honeynet, LAN, SOC).</li>
-            <li>Built incident handling pipelines and automated alert enrichment & response using <strong>Shuffle</strong> + <strong>Cortex</strong> analyzers.</li>
+            <li>Automated alert enrichment & response using <strong>Shuffle</strong> + <strong>Cortex</strong> analyzers.</li>
           </ul>
         </div>
       </div>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Awards(){
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen">
       <Head>
         <title>Awards — Mohamed Aziz Aguir</title>
         <meta name="description" content="Awards earned by Mohamed Aziz Aguir." />
@@ -22,7 +22,7 @@ export default function Awards(){
             <div className="text-lg font-semibold">Bal des Projets — Winner</div>
             <div className="text-slate-400">ESPRIT · SOC Architecture project (2nd year)</div>
             <p className="mt-2 text-slate-300/90">
-              Recognition for excellence on the SOC Architecture project at ESPRIT. (Media and certificate images coming soon — you can send them anytime and I will add them here.)
+              Recognition for excellence on the SOC Architecture project at ESPRIT. (Media and certificate images coming soon — send them anytime and I will add them here.)
             </p>
           </div>
         </div>
