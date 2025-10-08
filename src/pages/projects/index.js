@@ -1,0 +1,2 @@
+import Link from 'next/link'
+export default function Projects(){return (<div className='min-h-screen bg-[#071429] text-slate-100 p-10'><div className='max-w-4xl mx-auto'><h1 className='text-3xl font-bold mb-6'>Projects</h1><ul className='space-y-4'><li><Link href='/projects/cti-platform'><a className='text-indigo-300 hover:underline'>CTI Platform — Capgemini</a></Link></li><li><Link href='/projects/full-soc-deployment'><a className='text-indigo-300 hover:underline'>Full SOC Deployment — ESPRIT</a></Link></li></ul></div></div>)}
