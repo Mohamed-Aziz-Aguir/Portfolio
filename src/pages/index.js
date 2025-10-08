@@ -37,7 +37,7 @@ export default function Home() {
       
 
       <main id="about" className="max-w-6xl mx-auto px-6 py-12">
-        <section className="grid lg:grid-cols-3 gap-8 items-start">
+        <section className="grid lg:grid-cols-2 gap-8 items-start">
           <div className="lg:col-span-2 space-y-6">
             <div className="p-8 rounded-3xl bg-slate-800/30 border border-slate-700/40 shadow-lg transform transition-transform hover:-translate-y-2 hover:scale-102">
               <div className="flex items-start gap-6">
@@ -96,7 +96,8 @@ export default function Home() {
                   <div className="mt-4 flex gap-3"><span className="btn-outline">Details</span><a className="btn-outline" href="https://github.com/Mohamed-Aziz-Aguir" target="_blank" rel="noopener noreferrer">Source</a></div>
                 </a></Link>
               </div>
-            </section>
+            </div></div>
+</section>
           </div>
 
           <aside className="space-y-6">
@@ -120,12 +121,14 @@ export default function Home() {
               <p className="text-slate-300 text-sm">Email: <a href="mailto:mohamedaziz.aguir@outlook.com" className="text-indigo-300">mohamedaziz.aguir@outlook.com</a></p>
             </div>
           </aside>
-        </section>
+        </div></div>
+</section>
       
     <section className="mt-8">
       <h2 className="text-xl font-semibold text-white">Contact</h2>
       <p className="text-slate-300/90">Monastir, Tunisia · +216 93 236 576 · mohamedaziz.aguir@outlook.com</p>
-    </section>
+    </div></div>
+</section>
     
 </main>
 
