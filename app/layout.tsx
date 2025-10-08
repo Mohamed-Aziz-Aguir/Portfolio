@@ -39,8 +39,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`font-sans ${inter.variable} ${jetbrainsMono.variable} antialiased`}>
-        <Suspense fallback={null}>{children}</Suspense>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
+        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Analytics />
       </body>
     </html>

@@ -24,6 +24,8 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 195 100% 50%;
     --radius: 0.5rem;
+    --font-sans: var(--font-inter);
+    --font-mono: var(--font-jetbrains-mono);
   }
 }
 
