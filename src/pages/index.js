@@ -132,13 +132,11 @@ export default function Home() {
               <p className="text-slate-300 text-sm">Email: <a href="mailto:mohamedaziz.aguir@outlook.com" className="text-indigo-300">mohamedaziz.aguir@outlook.com</a></p>
             </div>
           </aside>
-        </div></div>
 </section>
       
-    <section className="mt-8">
-      <h2 className="text-xl font-semibold text-white">Contact</h2>
-      <p className="text-slate-300/90">Monastir, Tunisia · +216 93 236 576 · mohamedaziz.aguir@outlook.com</p>
-    </div></div>
+    <section className="mt-8" id="contact">
+  <h2 className="text-xl font-semibold text-white text-right">Contact</h2>
+  <p className="text-slate-300/90 text-right">Monastir, Tunisia · +216 93 236 576 · mohamedaziz.aguir@outlook.com</p>
 </section>
     
 </main>
