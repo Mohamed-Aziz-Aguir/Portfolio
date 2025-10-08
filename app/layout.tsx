@@ -1,8 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter, JetBrains_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import { Suspense } from "react"
 import "./globals.css"
 
 const inter = Inter({
@@ -39,10 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
-        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
-        <Analytics />
-      </body>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>{children}</body>
     </html>
   )
 }
